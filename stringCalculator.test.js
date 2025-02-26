@@ -1,6 +1,6 @@
 const add = require("./stringCalculator");
 
-test("returns the sum of multiple comma-separated numbers", () => {
-    expect(add("1,2,3,4,5")).toBe(15); // 1+2+3+4+5 = 15
+test("handles new lines as delimiters", () => {
+    expect(add("1\n2,3")).toBe(6); // 1 + 2 + 3 = 6
   });
   
